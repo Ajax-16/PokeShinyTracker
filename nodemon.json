@@ -1,0 +1,8 @@
+{
+    "ignore": [
+        "./views/css/output.css"
+    ],
+
+    "ext": 
+    "js, json, css, html"
+}

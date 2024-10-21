@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #222;
+}
+
+.back-menu-diamond {
+    position: absolute;
+    top: -6%;
+    background: rgb(2, 108, 179);
+    -webkit-transform: skew(25deg, 0deg);
+    -moz-transform: skew(25deg, 0deg);
+    -ms-transform: skew(25deg, 0deg);
+    -o-transform: skew(25deg, 0deg);
+    transform: skew(25deg, 0deg);
+}
+
+.menu {
+    background-color: #09f;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    /* El cuadrado está delante */
+}
+
+.appear {
+    animation: appear 1s both ease-in-out;
+}
+
+.show {
+    animation: show 1s both ease-in-out;
+}
+
+.translate {
+    animation: translate 15s infinite linear;
+}
+
+.late {
+    animation-delay: 0.1s;
+}
+
+.latex2 {
+    animation-delay: 0.2s;
+}
+
+.latex3 {
+    animation-delay: 0.3s;
+}
+
+.latex4 {
+    animation-delay: 0.4s;
+}
+
+.latex5 {
+    animation-delay: 0.5s;
+}
+
+
+.latex7 {
+    animation-delay: 0.75s;
+}
+
+.latex10 {
+    animation-delay: 1s;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes translate {
+    0% {
+        left: -600px; /* Ajusta el inicio para que sea visible */
+      }
+      100% {
+        left: 130%; /* Termina fuera de la pantalla */
+      }
+}
