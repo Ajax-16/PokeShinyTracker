@@ -10,7 +10,7 @@
 
 <body class="overflow-x-hidden">
     <div class="flex flex-col w-full gap-4 justify-center items-center font-mono">
-        <div class="w-[10%] appear">
+        <div class="w-[8%] appear">
             <img src="../resources/logo/pst_logo.png" alt="">
         </div>
 
@@ -18,25 +18,29 @@
             Pokemon Shiny Tracker
         </div>
 
-        <div class="my-6 text-white xl:text-lg show latex7">
-            Select your next quest
-        </div>
-        <div class="relative flex justify-center items-center w-full h-64 xl:h-72 appear latex7 mt-8">
-            <div class="back-menu-diamond h-72 w-96 xl:h-[21rem] xl:w-[32rem] xl:top-[-7.5%] translate"></div>
-            <div class="menu w-full h-64 xl:h-72"></div>
+        <input type="text" class="show latex7 mt-2 lg:mt-4 xl:mt-10 p-2 w-64 lg:w-96 xl:w-[28rem] rounded-md" placeholder="search pokemon..." style="font-family:system-ui">
 
-            <div class="flex justify-evenly items-center gap-64">
-                <div class="z-10" onclick="loadPrev()">
-                    <span class="text-white text-2xl cursor-pointer">&lt;</span>
+        <div class="relative flex justify-center items-center w-full h-64 lg:h-72 xl:h-96 appear latex7 lg:mt-8 xl:mt-14">
+            <div class="back-menu-diamond h-72 w-96 lg:h-[21rem] xl:h-[28rem] lg:w-[32rem] xl:w-[44rem] lg:top-[-7.5%] translate"></div>
+            <div class="menu w-full h-64 lg:h-72 xl:h-96"></div>
+
+            <div class="flex flex-col justify-evenly items-center gap-5">
+                <div class="z-10 fixed top-10 text-white text-xl lg:text-2xl" style="font-family:system-ui, -apple-system">
+                    Pikachu
                 </div>
                 <div class="z-10">
-                    <img id="pokemon-portrait" width="200" src="https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/pokemon/1.png" alt="">
-                </div>
-                <div class="z-10" onclick="loadNext()">
-                    <span class="text-white text-2xl cursor-pointer">&gt;</span>
+                    <img id="pokemon-portrait" class="min-h-[65px] max-h-[125px] lg:min-h-[85px] lg:max-h-[150px] xl:min-h-[100px] xl:max-h-[200px]" src="../resources/pokemon_sprites/1.gif" alt="">
                 </div>
             </div>
 
+        </div>
+        <div class="my-4 lg:my-12 xl:my-20 bg-[#444] py-2 w-full z-10 flex bg-red justify-center items-center gap-32 lg:gap-44 xl:gap-56 appear latex7">
+            <div class="text-white text-2xl lg:text-4xl xl:text-5xl cursor-pointer" onclick="loadPrev()">
+                &lt;
+            </div>
+            <div class="text-white text-2xl lg:text-4xl xl:text-5xl cursor-pointer" onclick="loadNext()">
+                &gt;
+            </div>
         </div>
 
     </div>

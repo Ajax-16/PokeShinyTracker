@@ -89,7 +89,7 @@ body {
 
 @keyframes translate {
     0% {
-        left: -600px; /* Ajusta el inicio para que sea visible */
+        left: -1200px; /* Ajusta el inicio para que sea visible */
       }
       100% {
         left: 130%; /* Termina fuera de la pantalla */

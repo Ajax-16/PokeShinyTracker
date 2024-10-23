@@ -4,14 +4,14 @@ function loadNext() {
     const portrait = document.getElementById('pokemon-portrait')
     pokemonNum++;
     controlNum();
-    portrait.src = `https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/pokemon/${pokemonNum}.png` 
+        portrait.src = `../resources/pokemon_sprites/${pokemonNum}.gif`
 }
 
 function loadPrev() {
     const portrait = document.getElementById('pokemon-portrait')
     pokemonNum--;
     controlNum();
-    portrait.src = `https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/pokemon/${pokemonNum}.png`
+    portrait.src = `../resources/pokemon_sprites/${pokemonNum}.gif`
 }
 
 function controlNum() {
