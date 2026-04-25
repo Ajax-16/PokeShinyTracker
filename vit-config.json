@@ -1,0 +1,19 @@
+{
+  "changelog": {
+    "path": "./CHANGELOG.md",
+    "title": "Registro de cambios"
+  },
+  "git": {
+    "defaultCommitMessage": "chore: update",
+    "releaseCommitMessage": "chore: version bump",
+    "changelogCommitMessage": "docs: update changelog"
+  },
+  "projects": [
+    {
+      "id": "pokeshinytracker",
+      "label": "pokeshinytracker",
+      "path": ".",
+      "tagPrefix": "v"
+    }
+  ]
+}
